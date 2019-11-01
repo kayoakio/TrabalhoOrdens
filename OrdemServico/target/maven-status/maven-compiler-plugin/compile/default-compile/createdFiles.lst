@@ -1,0 +1,11 @@
+ejb\AbstractFacadeLocal.class
+entity\Ordem_.class
+ejb\OrdemEJB.class
+entity\Credencial.class
+ejb\OrdemFacadeLocal.class
+entity\Ordem.class
+ejb\CredencialEJB.class
+entity\Papel.class
+entity\Papel_.class
+bean\OrdemBean.class
+entity\Credencial_.class

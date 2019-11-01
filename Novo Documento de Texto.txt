@@ -1,0 +1,53 @@
+        <h:form id="form">
+            <p:dataTable emptyMessage="Não há nada aqui."
+                         value="#{ordemBean.findAllOrdens()}" var="ordem"
+                         rowKey="#{ordemBean.ordem.numero}">
+
+                <p:column headerText="Numero" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.numero}"/>
+                </p:column>
+
+                <p:column headerText="Data" style="text-align: center; width: 3em;">
+                    <h:outputText value="#{ordem.data}">
+                        <f:convertDateTime pattern="dd/MM/yyyy"/>
+                    </h:outputText>
+                </p:column>  
+
+                <p:column headerText="Cliente" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.nomeCliente}"/>
+                </p:column>
+
+                <p:column headerText="Endereço" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.endCliente}"/>
+                </p:column>
+
+                <p:column headerText="Telefone" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.telefoneCliente}"/>
+                </p:column>
+
+                <p:column headerText="Modelo" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.modeloCarro}"/>
+                </p:column>
+
+                <p:column headerText="Placa" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.placaCarro}"/>
+                </p:column>
+
+                <p:column headerText="Ano" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.anoCarro}"/>
+                </p:column>
+
+                <p:column headerText="Observação" style="text-align: center; width: 3em;">
+                    <h:outputText value="#{ordem.observacao}"/>
+                </p:column>
+
+                <p:column headerText="Avaliação" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.avaliacao}"/>
+                </p:column>
+
+                <p:column headerText="Mecânico" style="text-align: center; width: 2em;">
+                    <h:outputText value="#{ordem.mecanico}"/>
+                </p:column>
+
+            </p:dataTable>
+        </h:form>

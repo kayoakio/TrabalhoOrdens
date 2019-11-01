@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Nova Ordem</title>
+    </h:head>
+
+    <h:body>
+        <h:form>
+            <br/> Observação: <h:inputText value="#{ordemBean.ordem.observacao}"/>
+            <br/>Avaliacao: <h:inputText value="#{ordemBean.ordem.avaliacao}"/>
+            <br/>Mecânico: <h:inputText value="#{ordemBean.ordem.mecanico}"/>            
+            <br/>Cliente: <h:inputText value="#{ordemBean.ordem.nomeCliente}"/>
+            <br/>Endereço: <h:inputText value="#{ordemBean.ordem.endCliente}"/>
+            <br/>Telefone: <h:inputText value="#{ordemBean.ordem.telefoneCliente}"/>
+            <br/>Modelo: <h:inputText value="#{ordemBean.ordem.modeloCarro}"/>
+            <br/>Placa: <h:inputText value="#{ordemBean.ordem.placaCarro}"/>
+            <br/>Ano Carro: <h:inputText value="#{ordemBean.ordem.anoCarro}"/>
+            
+            <br/> 
+            <p:commandButton actionListener="#{ordemBean.createOrdem()}" 
+                             action="/gerente/index?faces-redirect=true" 
+                             value="Salvar"/>
+            
+        </h:form>
+    </h:body>
+
+</html>

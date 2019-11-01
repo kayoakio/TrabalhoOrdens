@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    
+    <h:head>
+        <title>#{msgs.sistema}</title>
+    </h:head>
+    
+    <h:body>
+        <h:form>
+            <br/>Número: <h:outputText  value="#{ordemBean.ordemSelecionada.numero}"/>
+            <br/>Data: <h:outputText value="#{ordemBean.ordemSelecionada.data}"/>
+            <br/>Observação: <h:outputText value="#{ordemBean.ordemSelecionada.observacao}"/>
+            <br/>Avaliacao: <h:outputText value="#{ordemBean.ordemSelecionada.avaliacao}"/>
+            <br/>Mecânico: <h:outputText value="#{ordemBean.ordemSelecionada.mecanico}"/>            
+            <br/>Cliente: <h:outputText value="#{ordemBean.ordemSelecionada.nomeCliente}"/>
+            <br/>Endereço: <h:outputText value="#{ordemBean.ordemSelecionada.endCliente}"/>
+            <br/>Telefone: <h:outputText value="#{ordemBean.ordemSelecionada.telefoneCliente}"/>
+            <br/>Modelo: <h:outputText value="#{ordemBean.ordemSelecionada.modeloCarro}"/>
+            <br/>Placa: <h:outputText value="#{ordemBean.ordemSelecionada.placaCarro}"/>
+            <br/>Ano Carro: <h:outputText value="#{ordemBean.ordemSelecionada.anoCarro}"/>
+        </h:form>
+    </h:body>
+    
+</html>
